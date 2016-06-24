@@ -8,13 +8,26 @@ export const destructureArgs = (
     const cfg = name;
 
     if (typeof cfg === 'object') {
-        name = cfg.name;
-        modifiers = cfg.modifiers;
         namespace = cfg.namespace;
+        name = cfg.name;
         className = cfg.className;
+        modifiers = cfg.modifiers;
         utils = cfg.utils;
+        states = cfg.states;
         scopes = cfg.scopes;
         qa = cfg.qa;
-        js = cfg.qa;
+        js = cfg.js;
     }
-}
+
+    return {
+        namespace,
+        name,
+        className,
+        modifiers: toObj(modifiers),
+        states: toObj(states),
+        utils: toObj(utils),
+        scopes: toObj(scopes),
+        qa: toObj(qa),
+        js: toObj(js)
+    };
+};
