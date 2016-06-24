@@ -1,7 +1,7 @@
 {
-  "name": "taco-starter",
+  "name": "bemit",
   "version": "1.0.0",
-  "description": "Personal Starter package framework",
+  "description": "A BEMIT className generator",
   "main": "./lib/index.js",
   "scripts": {
     "ci": "npm run lint && npm test",
@@ -12,20 +12,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taco/js-starter.git"
+    "url": "git+https://github.com/taco/bemit.git"
   },
   "keywords": [
-    "npm",
-    "babel",
-    "javascript",
-    "webpack"
+    "bem",
+    "bemit",
+    "css",
+    "itcss",
+    "react",
+    "block",
+    "element",
+    "modifier"
   ],
   "author": "Travis Johnson <tvjohnson@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/taco/taco-starter/issues"
+    "url": "https://github.com/taco/bemit/issues"
   },
-  "homepage": "https://github.com/taco/taco-starter#readme",
+  "homepage": "https://github.com/taco/bemit#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.0.5",
